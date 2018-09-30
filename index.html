@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="../../jquery-3.3.1.min.js"></script>
+        <!-- 行追加JS読み込み -->
+        <script src="./add_table_row.js"></script>
+        <title>テーブルに行を追加するサンプル</title>
+    </head>
+    <body>
+        <h1>テーブルに行を追加する</h1>
+        <div>
+            <!-- 行追加ボタン -->
+            <input type="button" id="btn_addTableRow" value="行を追加する">
+            <table id="tbl">
+                <thead>
+                    <tr>
+                        <th>項目1</th>
+                        <th>項目2</th>
+                        <th>項目3</th>
+                        <th>項目4</th>
+                        <th>項目5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" name="column_1[]">
+                        </td>
+                        <td>
+                            <input type="text" name="column_2[]">
+                        </td>
+                        <td>
+                            <input type="text" name="column_3[]">
+                        </td>
+                        <td>
+                            <input type="text" name="column_4[]">
+                        </td>
+                        <td>
+                            <input type="text" name="column_5[]">
+                        </td>
+                        <!-- 行削除ボタン -->
+                        <td>
+                            <button name="btn_deleteTableRow" class="btn_deleteTableRow">この行を削除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
